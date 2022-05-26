@@ -1,0 +1,319 @@
+// styles
+@import "normalize.css";
+@import "splide.min.css";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-family: "Be Vietnam Pro", "Arial", sans-serif;
+    line-height: 1.625rem;
+    margin: auto;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-inline: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-block: 0;
+}
+
+/* navigation bar componenets */
+.navbar-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.desktop-menu-container {
+    flex: 1 0 auto;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.navbar-icon {
+    padding-inline: 0.6rem;
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+.menu-icon {
+    background-color: #37a623;
+    border: 0;
+    padding: 1rem;
+}
+
+/* mobile menu componenets */
+.menu {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu-visible {
+    display: block;
+}
+
+.menu-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dedede;
+    padding-left: 1.25rem;
+}
+
+.menu-category-header {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+}
+
+/* category list arrow component */
+.category-arrow {
+    background-image: url("hp-images/navbar-icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 8px;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #dedede;
+    height: 2.3rem;
+    width: 3.4rem;
+}
+
+/* category list component - used also for the middle page menu */
+.category-list {
+    font-size: 1rem;
+    line-height: 2.125;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    display: none;
+}
+
+.category-list-visible .category-list {
+    display: block;
+}
+
+.category-list-visible .category-arrow {
+    background-image: url("hp-images/navbar-icons/arrow-up.svg");
+}
+
+.menu-mobile-footer {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding-left: 1.25rem;
+    padding-block: 1.25rem;
+}
+
+.country-selectors {
+    padding-left: 1.25rem;
+    padding-block: 1.25rem;
+}
+
+.country-selectors-selector {
+    background-color: #F3F3F3;
+    border: none;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding-block: 0.25rem;
+    padding-inline: 0.4375rem;
+    margin: 0.3125rem;
+}
+
+/* promo carousel (top of the page) */
+.promo-slide1 {
+    background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
+    background-size: cover;
+    background-position: 52%;
+    width: 100%;
+    height: 555px;
+}
+
+.promo-slide2 {
+    background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
+    background-size: cover;
+    background-position: 60%;
+    height: 555px;
+    width: 100%;
+}
+
+.promo-slide3 {
+    background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
+    background-size: cover;
+    background-position: 60%;
+    height: 555px;
+    width: 100%;
+}
+
+.promo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.25rem;
+    min-height: 555px;
+    padding-block: 2.9rem;
+}
+
+.promo-text {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: #00000063 0 3px 13px;
+    padding-inline: 1.625rem;
+}
+
+.promo-button {
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 1rem;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #37a623;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    min-width: 15rem;
+}
+
+.splide__arrow svg {
+    display: none;
+}
+
+.splide__arrow {
+    background-image: url("hp-images/promo-sliders/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 28px;
+    background-color: transparent;
+    height: 2rem;
+    width: 2rem;
+    &.splide__arrow--prev {
+        background-image: url("hp-images/promo-sliders/arrow-left.svg");
+    }
+}
+
+.splide__pagination {
+    counter-reset: pagination-num;
+    position: static;
+    background-color: #f3f3f3;
+    gap: 1.625rem;
+    padding-top: 1.125rem;
+}
+
+.splide__pagination__page {
+    background: transparent;
+}
+
+.splide__pagination__page::before {
+    counter-increment: pagination-num;
+    content: counter(pagination-num, decimal-leading-zero);
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #b1b1b1;
+}
+
+.splide__pagination__page.is-active {
+    transform: none;
+    background: transparent;
+}
+
+.splide__pagination__page.is-active::before {
+    font-weight: 700;
+    color: #37a623;
+}
+
+/* marketing text section */
+.marketing-text {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding-block: 0.625rem;
+}
+
+.marketing-text p {
+    margin-inline: 0.625rem;
+    margin-bottom: 2.25rem;
+}
+
+/* middle page menu */
+.middle-page-menu {
+    background-color: #f3f3f3;
+}
+
+.category {
+    background-color: #ffffff;
+    padding-inline: 0.5rem;
+    margin: 0.625rem;
+    margin-top: 0;
+    padding-bottom: 0.525rem;
+}
+
+.category-flex {
+    display: flex;
+    align-items: center;
+}
+
+.category-name {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-top: 1.375rem;
+    margin-left: 0.25rem;
+    flex: 1 0 auto;
+}
+
+/* category-list component extra settings for the middle page menu */
+.category-name a {
+    border-bottom: 2px solid #37A623;
+}
+
+.category-list a {
+    padding: 0.3125rem;
+}
+
+.category-list-position {
+    position: relative;
+    left: 1.7em;
+}
+
+/* footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+}
