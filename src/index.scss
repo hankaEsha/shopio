@@ -52,33 +52,32 @@ li {
     margin-block: 0;
 }
 
-/* navigation bar componenets */
-.navbar-container {
+/* navigation bar component */
+.navbar--container {
     display: flex;
     align-items: flex-end;
-}
 
-.desktop-menu-container {
-    flex: 1 0 auto;
-}
+    .navbar__desktop__menu--container {
+        flex: 1 0 auto;
+        .navbar__desktop__menu {
+            display: none;
+        }
+    }
 
-.desktop-menu {
-    display: none;
-}
+    .navbar--icon {
+        padding-inline: 0.6rem;
+        padding-top: 1rem;
+        padding-bottom: 0.4rem;
+    }
 
-.navbar-icon {
-    padding-inline: 0.6rem;
-    padding-top: 1rem;
-    padding-bottom: 0.4rem;
-}
-
-.menu-icon {
+    .navbar--menu--icon {
     background-color: #37a623;
     border: 0;
     padding: 1rem;
 }
+}
 
-/* mobile menu componenets */
+/* mobile menu component */
 .menu {
     background-color: #ffffff;
     display: none;
@@ -87,11 +86,11 @@ li {
     width: 100%;
 }
 
-.menu-visible {
+.menu--visible {
     display: block;
 }
 
-.menu-category {
+.menu__category {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,13 +98,13 @@ li {
     padding-left: 1.25rem;
 }
 
-.menu-category-header {
+.menu__header {
     font-size: 1.25rem;
     line-height: 1.56rem;
 }
 
 /* category list arrow component */
-.category-arrow {
+.category--arrow {
     background-image: url("hp-images/navbar-icons/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -118,7 +117,7 @@ li {
 }
 
 /* category list component - used also for the middle page menu */
-.category-list {
+.category__list {
     font-size: 1rem;
     line-height: 2.125;
     margin-left: 1.25rem;
@@ -126,15 +125,16 @@ li {
     display: none;
 }
 
-.category-list-visible .category-list {
+.category__list--visible .category__list {
     display: block;
 }
 
-.category-list-visible .category-arrow {
+.category__list--visible .category--arrow {
     background-image: url("hp-images/navbar-icons/arrow-up.svg");
 }
 
-.menu-mobile-footer {
+/* other menu items used inside the hamburger - mobile version only */
+.menu__items__mobile__only {
     font-size: 0.875rem;
     line-height: 1.625rem;
     border-top: 1px solid #dedede;
@@ -143,12 +143,12 @@ li {
     padding-block: 1.25rem;
 }
 
-.country-selectors {
+.country--selectors {
     padding-left: 1.25rem;
     padding-block: 1.25rem;
 }
 
-.country-selectors-selector {
+.country--selectors--selector {
     background-color: #f3f3f3;
     border: none;
     font-size: 0.75rem;

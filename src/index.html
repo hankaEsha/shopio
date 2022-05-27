@@ -7,7 +7,7 @@
         <meta name="author" content="Hana Milotová" />
         <meta name="description" content="E-shop Shopio" />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <title>Hana Milotová</title>
+        <title>Shopio - ukázkový e-shop</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
         <link
@@ -18,22 +18,22 @@
     </head>
     <body>
         <header>
-            <div class="navbar-container">
-                <a class="navbar-icon" href="/">
+            <div class="navbar--container">
+                <a class="navbar--icon" href="/">
                     <img src="hp-images/shopio-logo-green.svg" alt="Shopio Logo" width="114" height="26" />
                 </a>
-                <div class="desktop-menu-container">
-                    <ul class="desktop-menu">
-                        <li>Zde bude menu pro desktop</li>
+                <div class="navbar__desktop__menu--container">
+                    <ul class="navbar__desktop__menu">
+                        <li>The desktop menu to be inserted here.</li>
                     </ul>
                 </div>
-                <a class="navbar-icon" href="/">
+                <a class="navbar--icon" href="/">
                     <img src="hp-images/navbar-icons/search.svg" alt="Search icon" width="22" height="22" />
                 </a>
-                <a class="navbar-icon" href="/account">
+                <a class="navbar--icon" href="/account">
                     <img src="hp-images/navbar-icons/user.svg" alt="User icon" width="20" height="22" />
                 </a>
-                <a class="navbar-icon" href="/shopping-cart">
+                <a class="navbar--icon" href="/shopping-cart">
                     <img
                         src="hp-images/navbar-icons/shopping-cart.svg"
                         alt="Schopping cart icon"
@@ -41,20 +41,18 @@
                         height="25"
                     />
                 </a>
-                <button class="menu-icon">
+                <button class="navbar--menu--icon">
                     <img src="hp-images/navbar-icons/menu.svg" alt="Menu icon" width="22" height="22" />
                 </button>
             </div>
             <nav class="menu">
                 <ul>
-                    <li id="menu-clothes-list">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">
-                                <a href="/clothes">Oblečení</a>
-                            </h2>
-                            <button id="menu-clothes" class="category-arrow"></button>
+                    <li class="menu__item">
+                        <div class="menu__category">
+                            <h2 class="menu__header">Oblečení</h2>
+                            <button class="category--arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/clothes/boots">Boty</a>
                             </li>
@@ -72,14 +70,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="menu-skis-list">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">
-                                <a href="/skis">Lyže</a>
-                            </h2>
-                            <button id="menu-skis" class="category-arrow"></button>
+                    <li class="menu__item">
+                        <div class="menu__category">
+                            <h2 class="menu__header">Lyže</h2>
+                            <button class="category--arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/skis/downhill-skis">Sjezdové lyže</a>
                             </li>
@@ -100,14 +96,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="menu-bikes-list">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">
-                                <a href="/bikes">Kola</a>
-                            </h2>
-                            <button id="menu-bikes" class="category-arrow"></button>
+                    <li class="menu__item">
+                        <div class="menu__category">
+                            <h2 class="menu__header">Kola</h2>
+                            <button class="category--arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/bikes/MTB-bikes">MTB kola</a>
                             </li>
@@ -120,7 +114,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="menu-mobile-footer">
+                <ul class="menu__items__mobile__only">
                     <li>
                         <a href="/about">O nás</a>
                     </li>
@@ -134,13 +128,13 @@
                         <a href="/contacts">Kontakty</a>
                     </li>
                 </ul>
-                <div class="country-selectors">
-                    <select class="country-selectors-selector" name="language-selector" id="language-select">
+                <div class="country--selectors">
+                    <select class="country--selectors--selector" name="language-selector" id="language-select">
                         <option value="czech">CZ</option>
                         <option value="english">EN</option>
                         <option value="german">DE</option>
                     </select>
-                    <select class="country-selectors-selector" name="currency-selector" id="currency-select">
+                    <select class="country--selectors--selector" name="currency-selector" id="currency-select">
                         <option value="czech-crown">CZK</option>
                         <option value="euro">EUR</option>
                         <option value="british-pound">GBP</option>
@@ -184,7 +178,7 @@
             </section>
             <section class="middle-page-menu">
                 <ul>
-                    <li id="clothes-list" class="category">
+                    <li class="category">
                         <div class="category-flex">
                             <img
                                 src="hp-images/category-images/clothes-group-image@2x.png"
@@ -195,9 +189,9 @@
                             <h2 class="category-name">
                                 <a href="/clothes">Oblečení</a>
                             </h2>
-                            <button id="clothes" class="category-arrow"></button>
+                            <button class="category--arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/clothes/boots">Boty</a>
@@ -220,7 +214,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="skis-list" class="category">
+                    <li class="category">
                         <div class="category-flex">
                             <img
                                 class="skis-category-image"
@@ -232,9 +226,9 @@
                             <h2 class="category-name">
                                 <a href="/skis">Lyže</a>
                             </h2>
-                            <button id="skis" class="category-arrow"></button>
+                            <button class="category--arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/downhill-skis">Sjezdové lyže</a>
@@ -261,7 +255,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li id="bikes-list" class="category">
+                    <li class="category">
                         <div class="category-flex">
                             <img
                                 src="hp-images/category-images/bikes-group-image@2x.png"
@@ -272,9 +266,9 @@
                             <h2 class="category-name">
                                 <a href="/bikes">Kola</a>
                             </h2>
-                            <button id="bikes" class="category-arrow"></button>
+                            <button class="category--arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/bikes/MTB-bikes">MTB kola</a>
