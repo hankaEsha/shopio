@@ -1,0 +1,33 @@
+/* category menu component - used also for the middle page menu */
+.category__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.25rem;
+}
+
+.category__name {
+    font-size: 1.25rem;
+    line-height: 1.56rem;
+}
+
+.category__list {
+    font-size: 1rem;
+    line-height: 2.125;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    display: none;
+}
+
+/* category list arrow component */
+.category__arrow {
+    background-image: url("hp-images/navbar-icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 8px;
+    background-color: #ffffff;
+    border: none;
+    border-left: 1px solid #dedede;
+    height: 2.3rem;
+    width: 3.4rem;
+}

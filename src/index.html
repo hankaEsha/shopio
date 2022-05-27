@@ -18,22 +18,22 @@
     </head>
     <body>
         <header>
-            <div class="navbar--container">
-                <a class="navbar--icon" href="/">
+            <div class="navbar">
+                <a class="navbar__icon" href="/">
                     <img src="hp-images/shopio-logo-green.svg" alt="Shopio Logo" width="114" height="26" />
                 </a>
-                <div class="navbar__desktop__menu--container">
-                    <ul class="navbar__desktop__menu">
+                <div class="navbar__desktop-menu-container">
+                    <ul class="navbar__desktop-menu">
                         <li>The desktop menu to be inserted here.</li>
                     </ul>
                 </div>
-                <a class="navbar--icon" href="/">
+                <a class="navbar__icon" href="/">
                     <img src="hp-images/navbar-icons/search.svg" alt="Search icon" width="22" height="22" />
                 </a>
-                <a class="navbar--icon" href="/account">
+                <a class="navbar__icon" href="/account">
                     <img src="hp-images/navbar-icons/user.svg" alt="User icon" width="20" height="22" />
                 </a>
-                <a class="navbar--icon" href="/shopping-cart">
+                <a class="navbar__icon" href="/shopping-cart">
                     <img
                         src="hp-images/navbar-icons/shopping-cart.svg"
                         alt="Schopping cart icon"
@@ -41,16 +41,16 @@
                         height="25"
                     />
                 </a>
-                <button class="navbar--menu--icon">
+                <button class="navbar__menu-icon">
                     <img src="hp-images/navbar-icons/menu.svg" alt="Menu icon" width="22" height="22" />
                 </button>
             </div>
             <nav class="menu">
                 <ul>
-                    <li class="menu__item">
-                        <div class="menu__category">
-                            <h2 class="menu__header">Oblečení</h2>
-                            <button class="category--arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header-top-menu">
+                            <h2 class="category__name">Oblečení</h2>
+                            <button class="category__arrow"></button>
                         </div>
                         <ul class="category__list">
                             <li>
@@ -70,10 +70,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__item">
-                        <div class="menu__category">
-                            <h2 class="menu__header">Lyže</h2>
-                            <button class="category--arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header-top-menu">
+                            <h2 class="category__name">Lyže</h2>
+                            <button class="category__arrow"></button>
                         </div>
                         <ul class="category__list">
                             <li>
@@ -96,10 +96,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu__item">
-                        <div class="menu__category">
-                            <h2 class="menu__header">Kola</h2>
-                            <button class="category--arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header-top-menu">
+                            <h2 class="category__name">Kola</h2>
+                            <button class="category__arrow"></button>
                         </div>
                         <ul class="category__list">
                             <li>
@@ -114,7 +114,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="menu__items__mobile__only">
+                <ul class="menu__items-mobile-only">
                     <li>
                         <a href="/about">O nás</a>
                     </li>
@@ -128,13 +128,13 @@
                         <a href="/contacts">Kontakty</a>
                     </li>
                 </ul>
-                <div class="country--selectors">
-                    <select class="country--selectors--selector" name="language-selector" id="language-select">
+                <div class="country-selectors">
+                    <select class="country-selectors-selector" name="language-selector" id="language-select">
                         <option value="czech">CZ</option>
                         <option value="english">EN</option>
                         <option value="german">DE</option>
                     </select>
-                    <select class="country--selectors--selector" name="currency-selector" id="currency-select">
+                    <select class="country-selectors-selector" name="currency-selector" id="currency-select">
                         <option value="czech-crown">CZK</option>
                         <option value="euro">EUR</option>
                         <option value="british-pound">GBP</option>
@@ -154,13 +154,13 @@
                         </li>
                         <li class="splide__slide promo-slide2">
                             <div class="promo-info">
-                                <div class="promo-text">Kolekce lyžařského oblečení</div>
-                                <button class="promo-button">Zobrazit produkty</button>
+                                <div class="promo-text">Pospěšte si</div>
+                                <button class="promo-button">Zobrazit všechny produkty</button>
                             </div>
                         </li>
                         <li class="splide__slide promo-slide3">
                             <div class="promo-info">
-                                <div class="promo-text">Lyžařské oblečení</div>
+                                <div class="promo-text">Zmizí rychleji než si myslíte</div>
                                 <button class="promo-button">Zobrazit produkty</button>
                             </div>
                         </li>
@@ -178,108 +178,108 @@
             </section>
             <section class="middle-page-menu">
                 <ul>
-                    <li class="category">
-                        <div class="category-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
                                 src="hp-images/category-images/clothes-group-image@2x.png"
                                 alt=""
                                 width="43"
                                 height="64"
                             />
-                            <h2 class="category-name">
-                                <a href="/clothes">Oblečení</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/clothes" class="category__name--middle-page-link">Oblečení</a>
                             </h2>
-                            <button class="category--arrow category--button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
                         <ul class="category__list category__list--position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/boots">Boty</a>
+                                <a href="/clothes/boots" class="category__list--middle-page-link">Boty</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/jackets">Bundy</a>
+                                <a href="/clothes/jackets" class="category__list--middle-page-link">Bundy</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/T-shirts">Trika</a>
+                                <a href="/clothes/T-shirts" class="category__list--middle-page-link">Trika</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/hats">Čepice</a>
+                                <a href="/clothes/hats" class="category__list--middle-page-link">Čepice</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/thermal-underwear">Funkční prádlo</a>
+                                <a href="/clothes/thermal-underwear" class="category__list--middle-page-link">Funkční prádlo</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="category">
-                        <div class="category-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
-                                class="skis-category-image"
+                                class="category__image-skis"
                                 src="hp-images/category-images/skis-group-image@2x.png"
                                 alt=""
                                 width="27"
                                 height="58"
                             />
-                            <h2 class="category-name">
-                                <a href="/skis">Lyže</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/skis" class="category__name--middle-page-link">Lyže</a>
                             </h2>
-                            <button class="category--arrow category--button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
                         <ul class="category__list category__list--position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-skis">Sjezdové lyže</a>
+                                <a href="/skis/downhill-skis" class="category__list--middle-page-link">Sjezdové lyže</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-binding">Sjezdové vázání</a>
+                                <a href="/skis/downhill-binding" class="category__list--middle-page-link">Sjezdové vázání</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/ski-boots">Lyžařské boty</a>
+                                <a href="/skis/ski-boots" class="category__list--middle-page-link">Lyžařské boty</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-sticks">Sjezdové hole</a>
+                                <a href="/skis/downhill-sticks" class="category__list--middle-page-link">Sjezdové hole</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/helmets">Helmy</a>
+                                <a href="/skis/helmets" class="category__list--middle-page-link">Helmy</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/ski-goggles">Lyžařské brýle</a>
+                                <a href="/skis/ski-goggles" class="category__list--middle-page-link">Lyžařské brýle</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="category">
-                        <div class="category-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
                                 src="hp-images/category-images/bikes-group-image@2x.png"
                                 alt=""
                                 width="43"
                                 height="64"
                             />
-                            <h2 class="category-name">
-                                <a href="/bikes">Kola</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/bikes" class="category__name--middle-page-link">Kola</a>
                             </h2>
-                            <button class="category--arrow category--button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
-                        <ul class="category__list category__list--position">
+                        <ul class="category__list category__list--middle-page-position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/MTB-bikes">MTB kola</a>
+                                <a href="/bikes/MTB-bikes" class="category__list--middle-page-link">MTB kola</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/road-bikes">Silničky</a>
+                                <a href="/bikes/road-bikes" class="category__list--middle-page-link">Silničky</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/accessories">Příslušenství</a>
+                                <a href="/bikes/accessories" class="category__list--middle-page-link">Příslušenství</a>
                             </li>
                         </ul>
                     </li>
@@ -476,9 +476,9 @@
                 </div>
             </section>
             <footer class="footer">
-                <section>
-                    <h2>Kontakt</h2>
-                    <address class="footer-links">
+                <section class="address">
+                    <address>
+                        <h2>Kontakt</h2>
                         <a href="tel:+420778889765" class="footer-link">
                             <div class="footer-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16">

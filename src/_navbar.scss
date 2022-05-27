@@ -1,0 +1,25 @@
+/* navigation bar component - using BEM metodology */
+.navbar {
+    display: flex;
+    align-items: flex-end;
+
+    &__desktop-menu-container {
+        flex: 1 0 auto;
+    }
+    
+    &__desktop-menu {
+        display: none;
+    }
+
+    &__icon {
+        padding-inline: 0.6rem;
+        padding-top: 1rem;
+        padding-bottom: 0.4rem;
+    }
+
+    &__menu-icon {
+        background-color: #37a623;
+        border: 0;
+        padding: 1rem;
+    }
+}
