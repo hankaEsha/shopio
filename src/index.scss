@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-block: 0.5em;
+}
+
 a:hover {
     color: #000000;
 }
@@ -145,7 +149,7 @@ li {
 }
 
 .country-selectors-selector {
-    background-color: #F3F3F3;
+    background-color: #f3f3f3;
     border: none;
     font-size: 0.75rem;
     line-height: 1;
@@ -213,11 +217,11 @@ li {
     min-width: 15rem;
 }
 
-.splide__arrow svg {
+.promo-carousel .splide__arrow svg {
     display: none;
 }
 
-.splide__arrow {
+.promo-carousel .splide__arrow {
     background-image: url("hp-images/promo-sliders/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -230,7 +234,7 @@ li {
     }
 }
 
-.splide__pagination {
+.promo-carousel .splide__pagination {
     counter-reset: pagination-num;
     position: static;
     background-color: #f3f3f3;
@@ -238,11 +242,11 @@ li {
     padding-top: 1.125rem;
 }
 
-.splide__pagination__page {
+.promo-carousel .splide__pagination__page {
     background: transparent;
 }
 
-.splide__pagination__page::before {
+.promo-carousel .splide__pagination__page::before {
     counter-increment: pagination-num;
     content: counter(pagination-num, decimal-leading-zero);
     font-weight: 400;
@@ -250,12 +254,12 @@ li {
     color: #b1b1b1;
 }
 
-.splide__pagination__page.is-active {
+.promo-carousel .splide__pagination__page.is-active {
     transform: none;
     background: transparent;
 }
 
-.splide__pagination__page.is-active::before {
+.promo-carousel .splide__pagination__page.is-active::before {
     font-weight: 700;
     color: #37a623;
 }
@@ -275,14 +279,16 @@ li {
 /* middle page menu */
 .middle-page-menu {
     background-color: #f3f3f3;
+    padding-bottom: 2.3125rem;
 }
 
 .category {
     background-color: #ffffff;
+    padding-top: 0.125rem;
     padding-inline: 0.5rem;
+    padding-bottom: 0.525rem;
     margin: 0.625rem;
     margin-top: 0;
-    padding-bottom: 0.525rem;
 }
 
 .category-flex {
@@ -298,9 +304,13 @@ li {
     flex: 1 0 auto;
 }
 
+.skis-category-image {
+    margin-inline: 0.52rem;
+}
+
 /* category-list component extra settings for the middle page menu */
 .category-name a {
-    border-bottom: 2px solid #37A623;
+    border-bottom: 2px solid #37a623;
 }
 
 .category-list a {
@@ -310,6 +320,150 @@ li {
 .category-list-position {
     position: relative;
     left: 1.7em;
+}
+
+/* hot tips section */
+.hot-tips {
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border: 1px solid #dedede;
+}
+
+/* product badges components */
+.product-badges {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.product-badge {
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 2.05;
+    padding-inline: 0.7rem;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3125rem;
+    width: fit-content;
+}
+
+.doprava-zdarma {
+    background-color: #000000;
+}
+
+.doporucujeme {
+    background-color: #e19cb3;
+}
+
+.novinka {
+    background-color: #9cb5e1;
+}
+
+.darek {
+    background-color: #e1bf9c;
+}
+
+.sleva {
+    background-color: #e26969;
+}
+
+/* product card component */
+.main-product-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+/* product card component - each card */
+.main-product-image-1 {
+    background-image: url("hp-images/hot-tips/image-1@2x.png");
+    background-size: 213px 228px;
+    background-position-y: bottom;
+    height: 16.3rem;
+}
+
+.main-product-image-2 {
+    background-image: url("hp-images/hot-tips/image-12@2x.png");
+    background-size: 292px 198px;
+    height: 16.3rem;
+}
+
+/* product card - product info component */
+.product-card .product-info {
+    margin-inline: 1rem;
+}
+
+.product-variants-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.3125rem;
+    margin-top: 1.25rem;
+}
+
+.product-variants-image {
+    min-width: 42px;
+    min-height: 44px;
+    border: 1px solid #dedede;
+}
+
+.splide__list.product-card {
+    max-width: 19.25rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.product-old-price {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-decoration: line-through;
+    color: #b1b1b1;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.product-current-price {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+
+.stock-info {
+    font-size: 0.8125rem;
+    line-height: 1.23;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #37a623;
+    text-align: center;
+}
+
+/* hot-tips carousel settings */
+.hot-tips-carousel .splide__pagination {
+    // counter-reset: pagination-num;
+    position: static;
+    background-color: #ffffff;
+    // gap: 1.625rem;
+    padding-top: 1.125rem;
+}
+
+.hot-tips-carousel .splide__pagination__page {
+    width: 9px;
+    height: 9px;
+}
+
+.hot-tips-carousel .splide__pagination__page.is-active {
+    transform: none;
+    background-color: #37a623;
 }
 
 /* footer */

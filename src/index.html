@@ -149,7 +149,7 @@
             </nav>
         </header>
         <main>
-            <section id="promo-carousel" class="splide" aria-label="Promotion offers">
+            <section id="promo-carousel" class="splide promo-carousel" aria-label="Akční nabídky">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide promo-slide1">
@@ -221,54 +221,70 @@
                         </ul>
                     </li>
                     <li id="skis-list" class="category">
-                        <img
-                            src="hp-images/category-images/skis-group-image@2x.png"
-                            alt=""
-                            width="43"
-                            height="64"
-                        />
-                        <h2>
-                            <a href="/skis">Lyže</a>
-                        </h2>
-                        <ul>
+                        <div class="category-flex">
+                            <img
+                                class="skis-category-image"
+                                src="hp-images/category-images/skis-group-image@2x.png"
+                                alt=""
+                                width="27"
+                                height="58"
+                            />
+                            <h2 class="category-name">
+                                <a href="/skis">Lyže</a>
+                            </h2>
+                            <button id="skis" class="category-arrow"></button>
+                        </div>
+                        <ul class="category-list category-list-position">
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/downhill-skis">Sjezdové lyže</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/downhill-binding">Sjezdové vázání</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/ski-boots">Lyžařské boty</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/downhill-sticks">Sjezdové hole</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/helmets">Helmy</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/skis/ski-goggles">Lyžařské brýle</a>
                             </li>
                         </ul>
                     </li>
-                    <li id="clothes-list" class="category">
-                        <img
-                            src="hp-images/category-images/bikes-group-image@2x.png"
-                            alt=""
-                            width="43"
-                            height="64"
-                        />
-                        <h2>
-                            <a href="/bikes">Kola</a>
-                        </h2>
-                        <ul>
+                    <li id="bikes-list" class="category">
+                        <div class="category-flex">
+                            <img
+                                src="hp-images/category-images/bikes-group-image@2x.png"
+                                alt=""
+                                width="43"
+                                height="64"
+                            />
+                            <h2 class="category-name">
+                                <a href="/bikes">Kola</a>
+                            </h2>
+                            <button id="bikes" class="category-arrow"></button>
+                        </div>
+                        <ul class="category-list category-list-position">
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/bikes/MTB-bikes">MTB kola</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/bikes/road-bikes">Silničky</a>
                             </li>
                             <li>
+                                <img src="hp-images/category-images/arrow-category.svg" alt="" />
                                 <a href="/bikes/accessories">Příslušenství</a>
                             </li>
                         </ul>
@@ -277,12 +293,77 @@
             </section>
             <section class="hot-tips">
                 <h1>Nejprodávanější</h1>
-                <div id="slider2" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div id="hot-tips-carousel" class="splide hot-tips-carousel" aria-label="Nejprodávanější">
                     <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">Slide 01</li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
+                        <ul class="splide__list product-card">
+                            <li class="splide__slide">
+                                <div class="main-product-image main-product-image-1">
+                                    <div class="product-badges">
+                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
+                                        <p class="product-badge doporucujeme">Doporučujeme</p>
+                                        <p class="product-badge novinka">Novinka</p>
+                                        <p class="product-badge darek">Dárek</p>
+                                        <p class="product-badge sleva">Sleva</p>
+                                    </div>
+                                </div>
+                                <div class="product-variants-images">
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/helmet-1@2x.png" alt="" width="42" height="42" />
+                                    </div>
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/helmet-2@2x.png" alt="" width="42" height="42" />
+                                    </div>
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/helmet-3@2x.png" alt="" width="42" height="42" />
+                                    </div>
+                                </div>
+                                <p class="product-name">Atomic Savor AMID Visor HD červená</p>
+                                <p class="product-old-price">7 590 Kč</p>
+                                <p class="product-current-price">6 590 Kč</p>
+                                <p class="stock-info">Skladem</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="main-product-image main-product-image-2">
+                                    <div class="product-badges">
+                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
+                                    </div>
+                                </div>
+                                <div class="product-variants-images">
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/bike-1@2x.png" alt="" width="35" height="24" />
+                                    </div>
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/bike-2@2x.png" alt="" width="35" height="24" />
+                                    </div>
+                                </div>
+                                <p class="product-info product-name">IBIS Ripmo V2 v kitu SLX 12 Speed</p>
+                                <p class="product-info product-old-price">197 590 Kč</p>
+                                <p class="product-info product-current-price">186 999 Kč</p>
+                                <p class="product-info stock-info">Skladem</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="main-product-image main-product-image-1">
+                                    <div class="product-badges">
+                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
+                                        <p class="product-badge doporucujeme">Doporučujeme</p>
+                                        <p class="product-badge novinka">Novinka</p>
+                                        <p class="product-badge darek">Dárek</p>
+                                        <p class="product-badge sleva">Sleva</p>
+                                    </div>
+                                </div>
+                                <div class="product-variants-images">
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/helmet-1@2x.png" alt="" width="42" height="42" />
+                                    </div>
+                                    <div class="product-variants-image">
+                                        <img src="hp-images/hot-tips/helmet-2@2x.png" alt="" width="42" height="42" />
+                                    </div>
+                                </div>
+                                <p class="product-name">Atomic AMID Visor HD červená</p>
+                                <p class="product-old-price">4 590 Kč</p>
+                                <p class="product-current-price">3 999 Kč</p>
+                                <p class="stock-info">Skladem</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
