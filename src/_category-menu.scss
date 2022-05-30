@@ -16,7 +16,6 @@
     line-height: 2.125;
     margin-left: 1.25rem;
     margin-bottom: 1.25rem;
-    display: none;
 }
 
 /* category list arrow component */
@@ -30,4 +29,8 @@
     border-left: 1px solid #dedede;
     height: 2.3rem;
     width: 3.4rem;
+
+    @media (min-width: 925px) {
+        visibility: hidden;
+    }
 }

@@ -7,18 +7,26 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
+    padding-top: 1rem;
     padding-inline: 1.875rem;
-    max-width: 60rem;
+    padding-bottom: 1.875rem;;
+    max-width: 80rem;
     margin-inline: auto;
 
     @media (min-width: 768px) {
         flex-direction: row;
+        padding-top: 4.75rem;
     }
+}
+
+.footer-header {
+    margin-bottom: 1.875rem;
 }
 
 .contact {
     flex: 1 0 auto;
+    font-style: normal;
 }
 
 .contact-link {
@@ -26,6 +34,8 @@
     font-size: 1.5rem;
     line-height: 1.25;
     font-style: normal;
+    display: flex;
+    gap: 0.4375rem;
 }
 
 .contact-link:hover {

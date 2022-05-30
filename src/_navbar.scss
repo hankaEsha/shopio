@@ -1,7 +1,9 @@
 /* navigation bar component - using BEM metodology */
 .navbar {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    max-width: 80rem;
+    margin-inline: auto;
 
     &__desktop-menu-container {
         flex: 1 0 auto;
@@ -9,6 +11,11 @@
     
     &__desktop-menu {
         display: none;
+
+        @media (min-width: 925px) {
+            display: block;
+            text-align: center;
+        }
     }
 
     &__icon {
@@ -21,5 +28,9 @@
         background-color: #37a623;
         border: 0;
         padding: 1rem;
+
+        @media (min-width: 925px) {
+            display: none;
+        }
     }
 }

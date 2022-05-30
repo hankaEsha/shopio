@@ -3,7 +3,7 @@
     background-color: #ffffff;
     display: none;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     width: 100%;
 }
 
@@ -11,9 +11,13 @@
     display: block;
 }
 
-/* category menu component - mobile menu */
-.category__header.category__header-top-menu {
+/* category menu component - for mobile hamburger menu */
+.category__header.category__header--top-menu {
     border-top: 1px solid #dedede;
+}
+
+.category__list {
+    display: none;
 }
 
 .category__list--visible .category__list {
