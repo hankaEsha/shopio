@@ -1,0 +1,35 @@
+/* mobile menu */
+.menu {
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu--visible {
+    display: block;
+}
+
+/* category menu component - mobile menu */
+.category__header.category__header-top-menu {
+    border-top: 1px solid #dedede;
+}
+
+.category__list--visible .category__list {
+    display: block;
+}
+
+.category__list--visible .category__arrow {
+    background-image: url("hp-images/navbar-icons/arrow-up.svg");
+}
+
+/* other menu items used inside the hamburger - mobile version only */
+.menu__items-mobile-only {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding-left: 1.25rem;
+    padding-block: 1.25rem;
+}

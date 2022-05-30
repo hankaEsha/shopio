@@ -1,0 +1,40 @@
+/* product badges components */
+.product-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    right: 0;
+    top: -2rem;
+}
+
+.product-badge {
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 2.05;
+    padding-inline: 0.7rem;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3125rem;
+    width: fit-content;
+}
+
+.free-delivery {
+    background-color: #000000;
+}
+
+.recommended {
+    background-color: #e19cb3;
+}
+
+.new {
+    background-color: #9cb5e1;
+}
+
+.gift {
+    background-color: #e1bf9c;
+}
+
+.sale {
+    background-color: #e26969;
+}

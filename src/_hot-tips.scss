@@ -1,0 +1,110 @@
+/* hot tips section */
+.hot-tips {
+    border-bottom: 1px solid #dedede;
+}
+
+/* product card component */
+.hot-tips-carousel .splide__list.product-card {
+    gap: 1rem;
+    max-width: 19.25rem;
+}
+
+.hot-tips-carousel .splide__track {
+    max-width: 80rem;
+    margin-top: 0.375rem;
+    margin-inline: auto;
+}
+
+.hot-tips-carousel .splide__slide {
+    margin-top: 2rem;
+}
+
+.main-product-image-area {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 14.25rem;
+    margin-top: 1.5rem;
+}
+
+.main-product-image {
+    width: 90%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.product-info {
+    margin-inline: 1.5rem;
+}
+
+.product-variants-images {
+    display: flex;
+    justify-content: center;
+    gap: 0.3125rem;
+    margin-top: 1.25rem;
+}
+
+.product-variants-image-frame {
+    width: 2.625rem;
+    height: 2.625rem;
+    border: 1px solid #dedede;
+
+    .product-variants-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.product-name {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.product-old-price {
+    font-size: 0.75rem;
+    line-height: 1.25;
+    text-decoration: line-through;
+    color: #b1b1b1;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.product-current-price {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+}
+
+.stock-info {
+    font-size: 0.8125rem;
+    line-height: 1.23;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #37a623;
+    text-align: center;
+}
+
+/* hot-tips carousel settings */
+.hot-tips-carousel .splide__pagination {
+    position: static;
+    background-color: #ffffff;
+    padding-top: 1.125rem;
+}
+
+.hot-tips-carousel .splide__pagination__page {
+    width: 0.5625rem;
+    height: 0.5625rem;
+}
+
+.hot-tips-carousel .splide__pagination__page.is-active {
+    transform: none;
+    background-color: #37a623;
+}

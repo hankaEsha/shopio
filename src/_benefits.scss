@@ -1,0 +1,15 @@
+/* benefit icons section */
+.benefit-icons-container {
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 56rem;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.625rem;
+    row-gap: 2rem;
+    max-width: 27rem;
+    margin-inline: auto;
+    cursor: pointer;
+}
