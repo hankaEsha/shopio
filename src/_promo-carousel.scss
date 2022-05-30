@@ -1,4 +1,8 @@
 /* promo carousel (top of the page) */
+.promo-carousel {
+    background-color: #f3f3f3;
+}
+
 .promo-carousel .splide__slide {
     background-size: cover;
     width: 100%;
@@ -6,17 +10,17 @@
 }
 .promo-slide1 {
     background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
-    background-position: 52%;
+    background-position: 52% 28%;
 }
 
 .promo-slide2 {
     background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
-    background-position: 70%;
+    background-position: 70% 28%;
 }
 
 .promo-slide3 {
     background-image: url("hp-images/promo-sliders/maarten-duineveld-pmfJcN7RGiw-unsplash-sh.png");
-    background-position: 100%;
+    background-position: 100% 28%;
 }
 
 .promo-info {
@@ -53,10 +57,6 @@
     min-width: 15rem;
 }
 
-.promo-carousel .splide__arrow svg {
-    display: none;
-}
-
 .promo-carousel .splide__arrow {
     background-image: url("hp-images/promo-sliders/arrow-right.svg");
     background-repeat: no-repeat;
@@ -70,10 +70,13 @@
     }
 }
 
+.promo-carousel .splide__arrow svg {
+    display: none;
+}
+
 .promo-carousel .splide__pagination {
     counter-reset: pagination-num;
     position: static;
-    background-color: #f3f3f3;
     gap: 1.625rem;
     padding-top: 1.125rem;
 }

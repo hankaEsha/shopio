@@ -4,6 +4,18 @@
 @import "navbar";
 @import "category-menu";
 @import "promo-carousel";
+@import "mobile-menu";
+@import "country-selectors";
+@import "middle-page-menu";
+@import "marketing-text";
+@import "product-badges";
+@import "hot-tips";
+@import "brands";
+@import "more-info-component";
+@import "articles";
+@import "mailing";
+@import "benefits";
+@import "footer";
 
 html {
     box-sizing: border-box;
@@ -30,7 +42,7 @@ a {
 }
 
 p {
-    margin-block: 0.5em;
+    margin-block: 0.5rem;
 }
 
 a:hover {
@@ -42,6 +54,8 @@ h1 {
     line-height: 2.2rem;
     text-align: center;
     margin-inline: 1rem;
+    margin-block: 0;
+    padding-block: 1.75rem;
 }
 
 h2 {
@@ -55,362 +69,8 @@ li {
     margin-block: 0;
 }
 
-/* mobile menu */
-.menu {
-    background-color: #ffffff;
-    display: none;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-}
-
-.menu--visible {
-    display: block;
-}
-
-/* category menu component - top menu */
-.category__header.category__header-top-menu {
-    border-top: 1px solid #dedede;
-}
-
-.category__list--visible .category__list {
-    display: block;
-}
-
-.category__list--visible .category__arrow {
-    background-image: url("hp-images/navbar-icons/arrow-up.svg");
-}
-
-/* other menu items used inside the hamburger - mobile version only */
-.menu__items-mobile-only {
-    font-size: 0.875rem;
-    line-height: 1.625rem;
-    border-top: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    padding-left: 1.25rem;
-    padding-block: 1.25rem;
-}
-
-.country-selectors {
-    padding-left: 1.25rem;
-    padding-block: 1.25rem;
-}
-
-.country-selectors-selector {
-    background-color: #f3f3f3;
-    border: none;
-    font-size: 0.75rem;
-    line-height: 1;
-    padding-block: 0.25rem;
-    padding-inline: 0.4375rem;
-    margin: 0.3125rem;
-}
-
-/* marketing text section */
-.marketing-text {
-    background-color: #f3f3f3;
-    text-align: center;
-    padding-block: 0.625rem;
-}
-
-.marketing-text p {
-    margin-inline: 0.625rem;
-    margin-bottom: 2.25rem;
-}
-
-/* middle page menu */
-.middle-page-menu {
-    background-color: #f3f3f3;
-    padding-bottom: 2.9375rem;
-}
-
-.category.category--middle-page-menu{
-    background-color: #ffffff;
-    padding-top: 0.125rem;
-    padding-inline: 0.5rem;
-    padding-bottom: 0.525rem;
-    margin: 0.625rem;
-    margin-top: 0;
-}
-
-.category__header.category__header--middle-page {
-    display: flex;
-    align-items: center;
-}
-
-.category__name.category__name--middle-page {
-    font-size: 1.75rem;
-    line-height: 1.25;
-    margin-top: 1.375rem;
-    margin-left: 0.25rem;
-    flex: 1 0 auto;
-}
-
-.category__image-skis {
-    margin-inline: 0.52rem;
-}
-
-/* category-list component extra settings for the middle page menu */
-
-.category__list--middle-page-link {
-    padding: 0.3125rem;
-}
-
-.category__list .category__list--middle-page-position {
-    position: relative;
-    left: 1.7em;
-}
-
-.category__name--middle-page-link {
-    border-bottom: 2px solid #37a623;
-}
-
-/* hot tips section */
-.hot-tips {
-    margin-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid #dedede;
-}
-
-/* product badges components */
-.product-badges {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.product-badge {
-    color: #ffffff;
-    font-size: 0.75rem;
-    line-height: 2.05;
-    padding-inline: 0.7rem;
-    margin-top: 0;
-    margin-right: 0.5rem;
-    margin-bottom: 0.3125rem;
-    width: fit-content;
-}
-
-.doprava-zdarma {
-    background-color: #000000;
-}
-
-.doporucujeme {
-    background-color: #e19cb3;
-}
-
-.novinka {
-    background-color: #9cb5e1;
-}
-
-.darek {
-    background-color: #e1bf9c;
-}
-
-.sleva {
-    background-color: #e26969;
-}
-
-/* product card component */
-.main-product-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 1rem;
-}
-
-/* product card component - each card */
-.main-product-image-1 {
-    background-image: url("hp-images/hot-tips/image-1@2x.png");
-    background-size: 213px 228px;
-    background-position-y: bottom;
-    height: 16.3rem;
-}
-
-.main-product-image-2 {
-    background-image: url("hp-images/hot-tips/image-12@2x.png");
-    background-size: 292px 198px;
-    height: 16.3rem;
-}
-
-/* product card - product info component */
-.product-card .product-info {
-    margin-inline: 1rem;
-}
-
-.product-variants-images {
-    display: flex;
-    justify-content: center;
-    gap: 0.3125rem;
-    margin-top: 1.25rem;
-}
-
-.product-variants-image {
-    width: 42px;
-    height: 42px;
-    border: 1px solid #dedede;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-.splide__list.product-card {
-    max-width: 19.25rem;
-}
-
-.product-name {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    text-align: center;
-}
-
-.product-old-price {
-    font-size: 0.75rem;
-    line-height: 1.25;
-    text-decoration: line-through;
-    color: #b1b1b1;
-    text-align: center;
-    margin-bottom: 0.3rem;
-}
-
-.product-current-price {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 0;
-}
-
-.stock-info {
-    font-size: 0.8125rem;
-    line-height: 1.23;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #37a623;
-    text-align: center;
-}
-
-/* hot-tips carousel settings */
-.hot-tips-carousel .splide__pagination {
-    position: static;
-    background-color: #ffffff;
-    padding-top: 1.125rem;
-}
-
-.hot-tips-carousel .splide__pagination__page {
-    width: 9px;
-    height: 9px;
-}
-
-.hot-tips-carousel .splide__pagination__page.is-active {
-    transform: none;
-    background-color: #37a623;
-}
-
-.brands-container {
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    cursor: pointer;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-}
-
-.brands {
+.standard-section {
+    margin-top: 0.75rem;
+    padding-bottom: 2.375rem;
     padding-inline: 0.625rem;
-}
-
-.link-more-info {
-    font-size: 1rem;
-    line-height: 2.125;
-    text-transform: uppercase;
-    background-image: url("hp-images/category-images/arrow-category.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    max-width: max-content;
-    display: block;
-    padding-right: 0.9325rem;
-    margin-inline: auto;
-    margin-block: 0.625rem;
-}
-
-/* articles */
-.articles {
-    padding-inline: 0.625rem;
-}
-.article-title {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    display: block;
-}
-
-.article-image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* .articles carousel settings */
-.articles-carousel .splide__slide {
-    max-width: 16.44rem;
-}
-
-@media (min-width: 768px) {
-    .articles-carousel .splide__slide {
-        max-width: 25rem;
-    }
-}
-
-.articles-carousel .splide__pagination {
-    position: static;
-    background-color: #ffffff;
-    padding-top: 1.125rem;
-}
-
-.articles-carousel .splide__pagination__page {
-    width: 9px;
-    height: 9px;
-}
-
-.articles-carousel .splide__pagination__page.is-active {
-    transform: none;
-    background-color: #37a623;
-}
-
-.articles-carousel .splide__list {
-    gap: 1.4375rem;
-}
-
-/* footer */
-.footer {
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-inline: 0.625rem;
-
-    @media (min-width: 425px) {
-        flex-direction: row;
-    }
-
-    a {
-        color: #ffffff;
-    }
-}
-
-.address {
-    flex: 1 0 auto;
 }
