@@ -18,22 +18,22 @@
     </head>
     <body>
         <header>
-            <div class="navbar-container">
-                <a class="navbar-icon" href="/">
+            <div class="navbar">
+                <a class="navbar__icon" href="/">
                     <img src="hp-images/shopio-logo-green.svg" alt="Shopio Logo" width="114" height="26" />
                 </a>
-                <div class="desktop-menu-container">
-                    <ul class="desktop-menu">
+                <div class="navbar__desktop-menu-container">
+                    <ul class="navbar__desktop-menu">
                         <li>The desktop menu to be inserted here.</li>
                     </ul>
                 </div>
-                <a class="navbar-icon" href="/">
+                <a class="navbar__icon" href="/">
                     <img src="hp-images/navbar-icons/search.svg" alt="Search icon" width="22" height="22" />
                 </a>
-                <a class="navbar-icon" href="/account">
+                <a class="navbar__icon" href="/account">
                     <img src="hp-images/navbar-icons/user.svg" alt="User icon" width="20" height="22" />
                 </a>
-                <a class="navbar-icon" href="/shopping-cart">
+                <a class="navbar__icon" href="/shopping-cart">
                     <img
                         src="hp-images/navbar-icons/shopping-cart.svg"
                         alt="Schopping cart icon"
@@ -41,18 +41,18 @@
                         height="25"
                     />
                 </a>
-                <button class="menu-icon">
+                <button class="navbar__menu-icon">
                     <img src="hp-images/navbar-icons/menu.svg" alt="Menu icon" width="22" height="22" />
                 </button>
             </div>
             <nav class="menu">
                 <ul>
-                    <li class="menu-item">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">Oblečení</h2>
-                            <button class="category-arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header--top-menu">
+                            <h2 class="category__name">Oblečení</h2>
+                            <button class="category__arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/clothes/boots">Boty</a>
                             </li>
@@ -70,12 +70,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">Lyže</h2>
-                            <button class="category-arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header--top-menu">
+                            <h2 class="category__name">Lyže</h2>
+                            <button class="category__arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/skis/downhill-skis">Sjezdové lyže</a>
                             </li>
@@ -96,12 +96,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <div class="menu-category">
-                            <h2 class="menu-category-header">Kola</h2>
-                            <button class="category-arrow"></button>
+                    <li class="category">
+                        <div class="category__header category__header--top-menu">
+                            <h2 class="category__name">Kola</h2>
+                            <button class="category__arrow"></button>
                         </div>
-                        <ul class="category-list">
+                        <ul class="category__list">
                             <li>
                                 <a href="/bikes/MTB-bikes">MTB kola</a>
                             </li>
@@ -114,7 +114,7 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="menu-mobile-footer">
+                <ul class="menu__items-mobile-only">
                     <li>
                         <a href="/about">O nás</a>
                     </li>
@@ -154,13 +154,13 @@
                         </li>
                         <li class="splide__slide promo-slide2">
                             <div class="promo-info">
-                                <div class="promo-text">Kolekce lyžařského oblečení</div>
-                                <button class="promo-button">Zobrazit produkty</button>
+                                <div class="promo-text">Pospěšte si</div>
+                                <button class="promo-button">Zobrazit všechny produkty</button>
                             </div>
                         </li>
                         <li class="splide__slide promo-slide3">
                             <div class="promo-info">
-                                <div class="promo-text">Lyžařské oblečení</div>
+                                <div class="promo-text">Zmizí rychleji než si myslíte</div>
                                 <button class="promo-button">Zobrazit produkty</button>
                             </div>
                         </li>
@@ -168,166 +168,206 @@
                 </div>
             </section>
             <section class="marketing-text">
-                <h1>Kvalitní vybavení pro sjezdové lyžování, skialpy a běžky!</h1>
-                <p>
-                    Máte rádi lyžování? My ho přímo milujeme. Proto jsme se rozhodli šířit evangelium lyžování dál a
-                    poskytovat všem kvalitní lyžařskou výzbroj a výstroj za dostupné ceny. V našem internetovém a
-                    kamenném obchodě seženete pro sjezdové lyžování, běžky a skialpy snad úplně vše, co byste jen mohli
-                    potřebovat.
-                </p>
+                <div class="marketing-text-container">
+                    <h1>Kvalitní vybavení pro sjezdové lyžování, skialpy a běžky!</h1>
+                    <p>
+                        Máte rádi lyžování? My ho přímo milujeme. Proto jsme se rozhodli šířit evangelium lyžování dál a
+                        poskytovat všem kvalitní lyžařskou výzbroj a výstroj za dostupné ceny. V našem internetovém a
+                        kamenném obchodě seženete pro sjezdové lyžování, běžky a skialpy snad úplně vše, co byste jen
+                        mohli potřebovat.
+                    </p>
+                </div>
             </section>
             <section class="middle-page-menu">
-                <ul>
-                    <li class="category">
-                        <div class="category-flex">
+                <ul class="middle-page-menu-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
                                 src="hp-images/category-images/clothes-group-image@2x.png"
                                 alt=""
                                 width="43"
                                 height="64"
                             />
-                            <h2 class="category-name">
-                                <a href="/clothes">Oblečení</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/clothes" class="category__name--middle-page-link">Oblečení</a>
                             </h2>
-                            <button class="category-arrow category-button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--middle-page-position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/boots">Boty</a>
+                                <a href="/clothes/boots" class="category__list--middle-page-link">Boty</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/jackets">Bundy</a>
+                                <a href="/clothes/jackets" class="category__list--middle-page-link">Bundy</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/T-shirts">Trika</a>
+                                <a href="/clothes/T-shirts" class="category__list--middle-page-link">Trika</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/hats">Čepice</a>
+                                <a href="/clothes/hats" class="category__list--middle-page-link">Čepice</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/clothes/thermal-underwear">Funkční prádlo</a>
+                                <a href="/clothes/thermal-underwear" class="category__list--middle-page-link"
+                                    >Funkční prádlo</a
+                                >
                             </li>
                         </ul>
                     </li>
-                    <li class="category">
-                        <div class="category-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
-                                class="skis-category-image"
+                                class="category__image-skis"
                                 src="hp-images/category-images/skis-group-image@2x.png"
                                 alt=""
                                 width="27"
                                 height="58"
                             />
-                            <h2 class="category-name">
-                                <a href="/skis">Lyže</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/skis" class="category__name--middle-page-link">Lyže</a>
                             </h2>
-                            <button class="category-arrow category-button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--middle-page-position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-skis">Sjezdové lyže</a>
+                                <a href="/skis/downhill-skis" class="category__list--middle-page-link">Sjezdové lyže</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-binding">Sjezdové vázání</a>
+                                <a href="/skis/downhill-binding" class="category__list--middle-page-link"
+                                    >Sjezdové vázání</a
+                                >
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/ski-boots">Lyžařské boty</a>
+                                <a href="/skis/ski-boots" class="category__list--middle-page-link">Lyžařské boty</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/downhill-sticks">Sjezdové hole</a>
+                                <a href="/skis/downhill-sticks" class="category__list--middle-page-link"
+                                    >Sjezdové hole</a
+                                >
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/helmets">Helmy</a>
+                                <a href="/skis/helmets" class="category__list--middle-page-link">Helmy</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/skis/ski-goggles">Lyžařské brýle</a>
+                                <a href="/skis/ski-goggles" class="category__list--middle-page-link">Lyžařské brýle</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="category">
-                        <div class="category-flex">
+                    <li class="category category--middle-page-menu">
+                        <div class="category__header category__header--middle-page">
                             <img
                                 src="hp-images/category-images/bikes-group-image@2x.png"
                                 alt=""
                                 width="43"
                                 height="64"
                             />
-                            <h2 class="category-name">
-                                <a href="/bikes">Kola</a>
+                            <h2 class="category__name category__name--middle-page">
+                                <a href="/bikes" class="category__name--middle-page-link">Kola</a>
                             </h2>
-                            <button class="category-arrow category-button"></button>
+                            <button class="category__arrow category--button"></button>
                         </div>
-                        <ul class="category-list category-list-position">
+                        <ul class="category__list category__list--middle-page-position">
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/MTB-bikes">MTB kola</a>
+                                <a href="/bikes/MTB-bikes" class="category__list--middle-page-link">MTB kola</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/road-bikes">Silničky</a>
+                                <a href="/bikes/road-bikes" class="category__list--middle-page-link">Silničky</a>
                             </li>
                             <li>
                                 <img src="hp-images/category-images/arrow-category.svg" alt="" />
-                                <a href="/bikes/accessories">Příslušenství</a>
+                                <a href="/bikes/accessories" class="category__list--middle-page-link">Příslušenství</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </section>
-            <section class="hot-tips">
+            <section class="standard-section hot-tips">
                 <h1>Nejprodávanější</h1>
                 <div id="hot-tips-carousel" class="splide hot-tips-carousel" aria-label="Nejprodávanější">
                     <div class="splide__track">
                         <ul class="splide__list product-card">
                             <li class="splide__slide">
-                                <div class="main-product-image main-product-image-1">
+                                <div class="main-product-image-area">
+                                    <img src="hp-images/hot-tips/image-1@2x.png" class="main-product-image" alt="" />
                                     <div class="product-badges">
-                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
-                                        <p class="product-badge doporucujeme">Doporučujeme</p>
-                                        <p class="product-badge novinka">Novinka</p>
-                                        <p class="product-badge darek">Dárek</p>
-                                        <p class="product-badge sleva">Sleva</p>
+                                        <p class="product-badge free-delivery">Doprava zdarma</p>
+                                        <p class="product-badge recommended">Doporučujeme</p>
+                                        <p class="product-badge new">Novinka</p>
+                                        <p class="product-badge gift">Dárek</p>
+                                        <p class="product-badge sale">Sleva</p>
                                     </div>
                                 </div>
                                 <div class="product-variants-images">
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/helmet-1@2x.png" alt="" width="42" height="42" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/helmet-1@2x.png"
+                                            alt=""
+                                            width="42"
+                                            height="42"
+                                        />
                                     </div>
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/helmet-2@2x.png" alt="" width="42" height="42" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/helmet-2@2x.png"
+                                            alt=""
+                                            width="42"
+                                            height="42"
+                                        />
                                     </div>
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/helmet-3@2x.png" alt="" width="42" height="42" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/helmet-3@2x.png"
+                                            alt=""
+                                            width="42"
+                                            height="42"
+                                        />
                                     </div>
                                 </div>
-                                <p class="product-name">Atomic Savor AMID Visor HD červená</p>
-                                <p class="product-old-price">7 590 Kč</p>
-                                <p class="product-current-price">6 590 Kč</p>
-                                <p class="stock-info">Skladem</p>
+                                <p class="product-info product-name">Atomic Savor AMID Visor HD červená</p>
+                                <p class="product-info product-old-price">7 590 Kč</p>
+                                <p class="product-info product-current-price">6 590 Kč</p>
+                                <p class="product-info stock-info">Skladem</p>
                             </li>
                             <li class="splide__slide">
-                                <div class="main-product-image main-product-image-2">
+                                <div class="main-product-image-area">
+                                    <img src="hp-images/hot-tips/image-12@2x.png" class="main-product-image" alt="" />
                                     <div class="product-badges">
-                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
+                                        <p class="product-badge free-delivery">Doprava zdarma</p>
                                     </div>
                                 </div>
                                 <div class="product-variants-images">
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/bike-1@2x.png" alt="" width="35" height="24" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/bike-1@2x.png"
+                                            alt=""
+                                            width="35"
+                                            height="24"
+                                        />
                                     </div>
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/bike-2@2x.png" alt="" width="35" height="24" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/bike-2@2x.png"
+                                            alt=""
+                                            width="35"
+                                            height="24"
+                                        />
                                     </div>
                                 </div>
                                 <p class="product-info product-name">IBIS Ripmo V2 v kitu SLX 12 Speed</p>
@@ -336,70 +376,121 @@
                                 <p class="product-info stock-info">Skladem</p>
                             </li>
                             <li class="splide__slide">
-                                <div class="main-product-image main-product-image-1">
+                                <div class="main-product-image-area">
+                                    <img src="hp-images/hot-tips/image-1@2x.png" class="main-product-image" alt="" />
                                     <div class="product-badges">
-                                        <p class="product-badge doprava-zdarma">Doprava zdarma</p>
-                                        <p class="product-badge doporucujeme">Doporučujeme</p>
-                                        <p class="product-badge novinka">Novinka</p>
-                                        <p class="product-badge darek">Dárek</p>
-                                        <p class="product-badge sleva">Sleva</p>
+                                        <p class="product-badge free-delivery">Doprava zdarma</p>
+                                        <p class="product-badge recommended">Doporučujeme</p>
+                                        <p class="product-badge new">Novinka</p>
+                                        <p class="product-badge gift">Dárek</p>
+                                        <p class="product-badge sale">Sleva</p>
                                     </div>
                                 </div>
                                 <div class="product-variants-images">
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/helmet-1@2x.png" alt="" width="42" height="42" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/helmet-1@2x.png"
+                                            alt=""
+                                            width="42"
+                                            height="42"
+                                        />
                                     </div>
-                                    <div class="product-variants-image">
-                                        <img src="hp-images/hot-tips/helmet-2@2x.png" alt="" width="42" height="42" />
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/helmet-2@2x.png"
+                                            alt=""
+                                            width="42"
+                                            height="42"
+                                        />
                                     </div>
                                 </div>
-                                <p class="product-name">Atomic AMID Visor HD červená</p>
-                                <p class="product-old-price">4 590 Kč</p>
-                                <p class="product-current-price">3 999 Kč</p>
-                                <p class="stock-info">Skladem</p>
+                                <p class="product-info product-name">Atomic AMID Visor HD červená</p>
+                                <p class="product-info product-old-price">4 590 Kč</p>
+                                <p class="product-info product-current-price">3 999 Kč</p>
+                                <p class="product-info stock-info">Skladem</p>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="main-product-image-area">
+                                    <img src="hp-images/hot-tips/image-12@2x.png" class="main-product-image" alt="" />
+                                    <div class="product-badges">
+                                        <p class="product-badge free-delivery">Doprava zdarma</p>
+                                    </div>
+                                </div>
+                                <div class="product-variants-images">
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/bike-1@2x.png"
+                                            alt=""
+                                            width="35"
+                                            height="24"
+                                        />
+                                    </div>
+                                    <div class="product-variants-image-frame">
+                                        <img
+                                            class="product-variants-image"
+                                            src="hp-images/hot-tips/bike-2@2x.png"
+                                            alt=""
+                                            width="35"
+                                            height="24"
+                                        />
+                                    </div>
+                                </div>
+                                <p class="product-info product-name">IBIS Ripmo V2 v kitu SLX 12 Speed</p>
+                                <p class="product-info product-old-price">197 590 Kč</p>
+                                <p class="product-info product-current-price">186 999 Kč</p>
+                                <p class="product-info stock-info">Skladem</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="brands">
+            <section class="standard-section brands">
                 <h1>Naše značky</h1>
                 <div class="brands-container">
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/atomic-logo.svg@2x.png" alt="Atomic logo" />
+                    <a href="/atomic-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/atomic-logo.svg@2x.png" alt="Atomic logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/fischer-logo@2x.png" alt="Fisher logo" />
+                    <a href="/fischer-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/fischer-logo@2x.png" alt="Fisher logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/salomon-secondary-logo@2x.png" alt="Salomon logo" />
+                    <a href="/salomon-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/salomon-logo@2x.png" alt="Salomon logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/rossignol-logo@2x.png" alt="Rossignol logo" />
+                    <a href="/rossignol-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/rossignol-logo@2x.png" alt="Rossignol logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/atomic-logo.svg@2x.png" alt="Atomic logo" />
+                    <a href="/atomic-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/atomic-logo.svg@2x.png" alt="Atomic logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/fischer-logo@2x.png" alt="Fisher logo" />
+                    <a href="/fischer-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/fischer-logo@2x.png" alt="Fisher logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/salomon-secondary-logo@2x.png" alt="Salomon logo" />
+                    <a href="/salomon-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/salomon-logo@2x.png" alt="Salomon logo" />
                     </a>
-                    <a class="brands" href="/">
-                        <img src="hp-images/brands-logos/rossignol-logo@2x.png" alt="Rossignol logo" />
+                    <a href="/rossignol-sortiment">
+                        <img class="brand" src="hp-images/brands-logos/rossignol-logo@2x.png" alt="Rossignol logo" />
                     </a>
                 </div>
-                <a href="/all-brands" class="link-more-info">Zobrazit všechny</a>
+                <a href="/all-brands" class="more-info-button">Zobrazit všechny</a>
             </section>
-            <section class="articles">
+            <section class="standard-section articles">
                 <h1>Píšeme o tom, co nás baví</h1>
                 <div id="articles-carousel" class="splide articles-carousel" aria-label="Vybrané články">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="article-add">
-                                    <img class="article-image" src="hp-images/articles/article-1@2x.png" alt="" width="400" height="274" />
+                                    <img
+                                        class="article-image"
+                                        src="hp-images/articles/article-1@2x.png"
+                                        alt=""
+                                        width="400"
+                                        height="274"
+                                    />
                                     <span class="article-title">
                                         Jak vybrat lyžařské brýle pro začátečníky i pokročilé
                                     </span>
@@ -407,7 +498,13 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="article-add">
-                                    <img class="article-image" src="hp-images/articles/article-2@2x.png" alt="" width="400" height="274" />
+                                    <img
+                                        class="article-image"
+                                        src="hp-images/articles/article-2@2x.png"
+                                        alt=""
+                                        width="400"
+                                        height="274"
+                                    />
                                     <span class="article-title">
                                         Jak vybrat lyžařské brýle pro začátečníky i pokročilé delší název článku
                                     </span>
@@ -415,120 +512,128 @@
                             </li>
                             <li class="splide__slide">
                                 <div class="article-add">
-                                    <img class="article-image" src="hp-images/articles/article-3@2x.png" alt="" width="400" height="274" />
-                                    <span class="article-title">
-                                        Jak vybrat lyžařské brýle pro začátečníky
-                                    </span>
+                                    <img
+                                        class="article-image"
+                                        src="hp-images/articles/article-3@2x.png"
+                                        alt=""
+                                        width="400"
+                                        height="274"
+                                    />
+                                    <span class="article-title"> Jak vybrat lyžařské brýle pro začátečníky </span>
                                 </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <a href="/articles" class="link-more-info">Více článků</a>
+                <a href="/articles" class="more-info-button">Více článků</a>
             </section>
-            <section class="mailing">
+            <section class="standard-section mailing">
                 <h1>Přihlaš se k novinkám</h1>
                 <p>
-                    Nenech si ujít žádné novinky, akce nebo zajímavosti.Zpravodaj rozesíláme párkrát do měsíce a pokud
+                    Nenech si ujít žádné novinky, akce nebo zajímavosti. Zpravodaj rozesíláme párkrát do měsíce a pokud
                     se ti nebude líbit, můžeš se kdykoli odhlásit.
                 </p>
-                <form action="">
-                    <input id="emailAddress" type="email" name="email" />
-                    <button>Odebírat</button>
+                <form action="post">
+                    <input class="mailing-input" id="emailAddress" type="email" name="email" />
+                    <button class="mailing-submit-button">Odebírat</button>
                 </form>
                 <p>
                     Odesláním souhlasíte se
-                    <a href="/gdpr">zpracováním osobních údajů</a>.
+                    <a href="/gdpr" class="gdpr-link">zpracováním osobních údajů</a>.
                 </p>
             </section>
             <section class="benefit-icons">
                 <div class="benefit-icons-container">
-                    <img src="/svg/benefit-icons/delivery.svg" alt="Delivery icon" />
-                    <p>Doprava zdarma<em> od 500 Kč</em></p>
-                    <img src="/svg/benefit-icons/map.svg" alt="Map icon" />
-                    <p>
-                        <em>200</em>
-                        kamenných prodejen v ČR
-                    </p>
-                    <img src="/svg/benefit-icons/swap.svg" alt="Swap icon" />
-                    <p>
-                        <em>30 dní</em>
-                        na výměnu zboží
-                    </p>
-                    <img src="/svg/benefit-icons/mountains.svg" alt="Mountains icon" />
-                    <p>Vyrobeno<em> na horách</em></p>
+                    <div>
+                        <img src="hp-images/benefit-icons/delivery.svg" alt="Delivery icon" />
+                        <p>Doprava zdarma<br /><em> od 500 Kč</em></p>
+                    </div>
+                    <div>
+                        <img src="hp-images/benefit-icons/map.svg" alt="Map icon" />
+                        <p><em>200</em> kamenných<br />prodejen v ČR</p>
+                    </div>
+                    <div>
+                        <img src="hp-images/benefit-icons/swap.svg" alt="Swap icon" />
+                        <p><em>30 dní</em><br />na výměnu zboží</p>
+                    </div>
+                    <div>
+                        <img src="hp-images/benefit-icons/mountains.svg" alt="Mountains icon" />
+                        <p>
+                            Vyrobeno<em><br />na horách</em>
+                        </p>
+                    </div>
                 </div>
             </section>
             <footer class="footer">
-                <section  class="address">
-                    <address>
-                        <h2>Kontakt</h2>
-                        <a href="tel:+420778889765" class="footer-link">
-                            <div class="footer-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16">
-                                    <path
-                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                                        fill="currentColor"
-                                    ></path>
-                                </svg>
+                <div class="footer-info">
+                    <section class="contact">
+                        <h3 class="footer-header">Kontakt</h3>
+                        <address>
+                            <div class="contact-links">
+                                <a href="tel:+420778889765" class="contact-link">
+                                    <div class="footer-icon">
+                                        <img
+                                            src="hp-images/footer-icons/phone-call.png"
+                                            alt=""
+                                            width="21"
+                                            height="21"
+                                        />
+                                    </div>
+                                    <span>+420 778 889 765</span>
+                                </a>
+                                <a href="mailto:info@shopio.cz" class="contact-link">
+                                    <div class="footer-icon">
+                                        <img src="hp-images/footer-icons/email.png" alt="" width="21" height="15" />
+                                    </div>
+                                    <span>info@shopio.cz</span>
+                                </a>
                             </div>
-                            <span class="footer-icon-text"> +420 778 889 765 </span>
-                        </a>
-                        <a href="mailto:info@shopio.cz" class="footer-link">
-                            <div class="footer-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                                        fill="currentColor"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <span class="footer-icon-text"> info@shopio.cz </span>
-                        </a>
-                        <p>
-                            w3w s.r.o.<br />
-                            Jeremenkova 411/9<br />
-                            Praha 4, 147 00<br />
-                            Česká republika
-                        </p>
-                    </address>
-                </section>
-                <section>
-                    <h2>O nákupu</h2>
-                    <ul>
-                        <li>
-                            <a href="/delivery-and-payment">Doprava a platba</a>
-                        </li>
-                        <li>
-                            <a href="/claims">Reklamace a vrácení zboží</a>
-                        </li>
-                        <li>
-                            <a href="/terms-and-conditions">Obchodní podmínky</a>
-                        </li>
-                        <li>
-                            <a href="/gdpr">Zásady ochrany osobních údajů</a>
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Pro vás</h2>
-                    <ul>
-                        <li>
-                            <a href="/size-charts">Tabulky velikostí</a>
-                        </li>
-                        <li>
-                            <a href="/FAQ">Časté dotazy</a>
-                        </li>
-                        <li>
-                            <a href="/branches">Prodejny</a>
-                        </li>
-                        <li>
-                            <a href="/our-story">Náš příběh</a>
-                        </li>
-                        <li>
-                            <a href="/articles">Články</a>
-                        </li>
-                    </ul>
-                </section>
+                            <p class="contact-address">
+                                w3w s.r.o.<br />
+                                Jeremenkova 411/9<br />
+                                Praha 4, 147 00<br />
+                                Česká republika
+                            </p>
+                        </address>
+                    </section>
+                    <section>
+                        <h3 class="footer-header">O nákupu</h3>
+                        <ul>
+                            <li>
+                                <a href="/delivery-and-payment" class="info-link">Doprava a platba</a>
+                            </li>
+                            <li>
+                                <a href="/claims" class="info-link">Reklamace a vrácení zboží</a>
+                            </li>
+                            <li>
+                                <a href="/terms-and-conditions" class="info-link">Obchodní podmínky</a>
+                            </li>
+                            <li>
+                                <a href="/gdpr" class="info-link">Zásady ochrany osobních údajů</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="footer-header">Pro vás</h3>
+                        <ul class="info-link">
+                            <li>
+                                <a href="/size-charts" class="info-link">Tabulky velikostí</a>
+                            </li>
+                            <li>
+                                <a href="/FAQ" class="info-link">Časté dotazy</a>
+                            </li>
+                            <li>
+                                <a href="/branches" class="info-link">Prodejny</a>
+                            </li>
+                            <li>
+                                <a href="/our-story" class="info-link">Náš příběh</a>
+                            </li>
+                            <li>
+                                <a href="/articles" class="info-link">Články</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </footer>
         </main>
         <script src="splide.min.js"></script>
