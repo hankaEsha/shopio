@@ -14,12 +14,12 @@
 /* .articles carousel settings */
 .articles-carousel .splide__slide {
     max-width: clamp(16.44rem, 14.728rem + 8.56vw, 25rem);
+    margin-bottom: 1.875rem;
 }
 
 .articles-carousel .splide__pagination {
     position: static;
     background-color: #ffffff;
-    margin-top: 1.8rem;
     padding-bottom: 0.7rem;
 
     @media (min-width: 1280px) {
