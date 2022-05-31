@@ -1,5 +1,5 @@
 ### shopio
-# A responsive home-page of new Shopio e-shop (demoversion) based on a proveded graphic design in Adobe XD.
+# New Shopio e-shop (demoversion) responsive home-page created basing on a proveded graphic design delivered in Adobe XD.
 
 -   **Gulp 4**: task runner for running all of the following
 -   **Sass compilation**: leverage the power of the most popular CSS extension language
