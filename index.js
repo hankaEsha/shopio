@@ -11,4 +11,3 @@ document.querySelectorAll(".category__header, .category__button").forEach((eleme
         event.target.closest(".category").classList.toggle("category__list--visible");
     });
 });
-
